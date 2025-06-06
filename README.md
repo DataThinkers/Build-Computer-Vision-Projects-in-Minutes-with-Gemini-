@@ -39,13 +39,17 @@ img = Image.open("fridge.jpg")
 img.show()
 
 prompt = "What Indian vegetarian dishes can I make using this pantry?"
+
 response = model.generate_content([prompt, img])
 
+
 print(response.text)
+
 
 That's it! You’ve just built a vision-powered question answering system with AI. 🎯
 
 ⚡ Behind the Scenes
+
 Uses Gemini 1.5 Pro: Google’s multimodal LLM (text + image)
 
 Built with Pillow for image handling
