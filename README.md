@@ -27,16 +27,20 @@ pip install google-generativeai Pillow
 ✅ Step 2: Authenticate Gemini
 
 import google.generativeai as genai
+
 genai.configure(api_key="your-gemini-api-key")
 
 ✅ Step 3: Load Image + Ask a Question
 
 from PIL import Image
+
 img = Image.open("fridge.jpg")
+
 img.show()
 
 prompt = "What Indian vegetarian dishes can I make using this pantry?"
 response = model.generate_content([prompt, img])
+
 print(response.text)
 
 That's it! You’ve just built a vision-powered question answering system with AI. 🎯
