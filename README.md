@@ -23,10 +23,12 @@ No web hosting, no server — just run it directly in Jupyter or Google Colab.
 ✅ Step 1: Install Once
 
 pip install google-generativeai Pillow
+
 ✅ Step 2: Authenticate Gemini
 
 import google.generativeai as genai
 genai.configure(api_key="your-gemini-api-key")
+
 ✅ Step 3: Load Image + Ask a Question
 
 from PIL import Image
